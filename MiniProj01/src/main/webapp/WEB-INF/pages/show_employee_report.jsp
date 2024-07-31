@@ -21,7 +21,9 @@
 <td>${emp.ename}</td>
 <td>${emp.job}</td>
 <td>${emp.sal}</td>
-<td>          </td>
+<td><a href="emp_edit?no=${emp.empno}"><img src="images/edit.jpg" width="30px" height="30px">edit</a>   
+<a href="emp_delete?no=${emp.empno}"><img src="images/delete.jpg" width="30px" height="30px">edit</a>       
+</td>
 </tr>
 </c:forEach>
 </table>
@@ -31,7 +33,10 @@
 </c:otherwise>
 
 </c:choose>
-
+<center>
+<a href="emp_add"><img src="images/register.jpg"  width="40px" height="50px"/>Register Employee</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="./><img src="images/home.jpg"  width="40px" height="50px"/ > GoToHomePage</a>
+</center>
 
 </body>
 </html>
