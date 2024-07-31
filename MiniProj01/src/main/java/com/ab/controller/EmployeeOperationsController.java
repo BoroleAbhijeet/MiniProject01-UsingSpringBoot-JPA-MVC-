@@ -24,7 +24,7 @@ public class EmployeeOperationsController {
 	@GetMapping("/emp_report")
 	public String showEmployeeReport(Map<String, Object> map) {
 		Iterable<Employee> emps=empService.getAllEmployees();
-		map.put("ampsList", emps);
+		map.put("empsList", emps);
 		return "show_employee_report";
 	}
 }

@@ -18,7 +18,7 @@
 <c:forEach var="emp" items="${empsList}">
 <tr>
 <td>${emp.empno}</td>
-<td>${emp.empname}</td>
+<td>${emp.ename}</td>
 <td>${emp.job}</td>
 <td>${emp.sal}</td>
 <td>          </td>
