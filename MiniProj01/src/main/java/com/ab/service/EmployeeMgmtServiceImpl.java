@@ -17,5 +17,10 @@ public class EmployeeMgmtServiceImpl implements IEmployeeMgmtService {
 
 		return empRepo.findAll();
 	}
-
+	
+	@Override
+	public String registerEmployee(Employee emp) {
+		
+		return "employee is saved with id value: "+empRepo.save(emp).getEmpno();
+	}
 }
